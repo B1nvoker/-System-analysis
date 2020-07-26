@@ -1,0 +1,82 @@
+input{
+  color: #000;
+  background: grey;
+}
+
+body{
+  background: url('image.jpg') center top;
+
+}
+
+div#allout{
+  width: 97%;
+  height: 450px;
+  overflow: auto;
+  border: 2px inset #777;
+  border-radius: 20px;
+  border-color: rgb(64,199,129);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Comic Sans MS;
+  margin: 5px;
+  padding-top: 5px;
+  padding: 10px;
+}
+
+div#container{
+  width: 500px;
+  height: 400px;
+}
+
+button{
+  font-family: Comic Sans MS
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+  margin: 3px;
+}
+button:hover {
+    background-color: grey;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputfile + label {
+    font-family: Comic Sans MS
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+    margin: 3px;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: grey;
+}
+.inputfile:focus + label {
+  outline: 5px outset #fff;
+  background-color: red;
+}
+
+hr {
+    border: none; 
+    color: rgb(64,199,129);
+    background-color: rgb(64,199,129);
+    height: 2px;
+   }
